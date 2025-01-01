@@ -6,6 +6,7 @@ import Search from './components/search';
 export default function Home() {
   return (
     <div>
+      <h1>Hello World!</h1>
       <Search />
       <Forecast />
     </div>
