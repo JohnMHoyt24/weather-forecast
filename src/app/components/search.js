@@ -19,6 +19,8 @@ function weatherData(){
     error: false,
   });
 
+
+  //We want to show the day of the week for the weather. Get the date first!
   const toDateFunction = () => {
     const months = [
       'January',
@@ -43,6 +45,11 @@ function weatherData(){
       'Friday',
       'Saturday',
     ];
+
+    const currentDate = new Date();
+
+    const date = `${weekDays[currentDate.getDay()]} ${currentDate.getDate()} ${months[currentDate.getMonth()]}`;
+    return date;
   }
 }
 
